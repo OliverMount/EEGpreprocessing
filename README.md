@@ -1,11 +1,13 @@
 # EEG preprocessing
 
-### Preprocessing of Electroencephalography (EEG) signals
+### Preprocessing of ElectroEncephaloGraphy (EEG) signals
+
+The preprocessing of EEG signals is adapted in my manuscript follows the brainX eeglab's principle. I have modified their code to suit to my experimental paradigm 
 
 
 In order to preprocess the *.mff file for each participant, please follow the following folder structure
 
-1. raw folder contains folders for each participant
+1. Place all raw data in the `raw folder` with each participant raw data organized as folder with the raw folder.  The `raw` folder is the one preprocessing scripts targets to sequentially preprocess individual participant.  
 
 ```
 raw 
@@ -19,7 +21,7 @@ raw
 cd sub1_20221124
 ```
 
-2. Each participant folder contains *.mff files
+Each participant folder contains *.mff files
 
 ```
 sub1_20221124 
@@ -28,4 +30,4 @@ sub1_20221124
 ├── sub3_20221124_100558.mff 
 
 
-3. 
+2. 
