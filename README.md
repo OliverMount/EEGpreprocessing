@@ -64,24 +64,43 @@ After preprocessing, epoch the data according to your experimental conditions.
 
 1. Edit settings in `scripts/epoching/Epoching.m`
 
-	* Set the desired epoch duration, e.g.:
+	* Set the **desired epoch duration**, e.g.:
 	```
-	epoch_duration = [-0.2 1.2];  % in seconds
+	epoch_duration = [-0.2 1.2];  % in seconds 
+	```
+	* Define the **baseline correction window**, e.g.:
+	```
+	baseline_window = [-200 -10];  % in milliseconds 
+	```
+	* Adjust paths for:
+		- Preprocessed data
+		- EEGLAB and toolbox directories
 	
+ 
+2. Run epoching:
+
 	```
- After preprocessing, the epoching based on the experimental trial length is done using scripts/epoching/Epoching.m file. 
+	run('scripts/epoching/Epoching.m') 
+	```
+ 
 
-2. Set the epoch_duration for example  ([-0.2 1.2] s) and baseline correction durations (for exmaple  [-200,-10] ms) in the Epoching.m as well the path for the preprocessed data and the toolboxes.
-
-3. Run the Epoching.m. 
-
-4. It would generate condition wise mat files of epoched data for each condition. The conditions for your experiment can be set as in  cond_name.m
+3. The script will generate condition-wise .mat files for each participant, stored in an output folder. Conditions are defined in `scripts/epoching/cond_name.m`
 
 
+---
 
+🧠 Notes
 
+* Ensure that the sampling rate, channel layout, and event markers in .mff files are consistent across participants.
 
+* The preprocessing script processes subjects sequentially from the raw/ directory.
 
+* Modify parameters in the scripts to fit your own experimental design and analysis pipeline.
 
+---
 
+📬 Contact
 
+For questions or adaptation guidance, please contact the repository maintainer or refer to the comments within each MATLAB script.
+
+--- 
