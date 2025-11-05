@@ -57,9 +57,19 @@ run('scripts/preprocessing/preprocessing.m')
 
 ---
 
-### Epoching
+### ⏱️ Epoching
+After preprocessing, epoch the data according to your experimental conditions.
 
-1. After preprocessing, the epoching based on the experimental trial length is done using scripts/epoching/Epoching.m file. 
+### Steps
+
+1. Edit settings in `scripts/epoching/Epoching.m`
+
+	* Set the desired epoch duration, e.g.:
+	```
+	Set the desired epoch duration, e.g.:
+	
+	```
+ After preprocessing, the epoching based on the experimental trial length is done using scripts/epoching/Epoching.m file. 
 
 2. Set the epoch_duration for example  ([-0.2 1.2] s) and baseline correction durations (for exmaple  [-200,-10] ms) in the Epoching.m as well the path for the preprocessed data and the toolboxes.
 
