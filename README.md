@@ -66,7 +66,7 @@ After preprocessing, epoch the data according to your experimental conditions.
 
 	* Set the desired epoch duration, e.g.:
 	```
-	Set the desired epoch duration, e.g.:
+	epoch_duration = [-0.2 1.2];  % in seconds
 	
 	```
  After preprocessing, the epoching based on the experimental trial length is done using scripts/epoching/Epoching.m file. 
