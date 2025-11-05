@@ -35,11 +35,11 @@ Each participant folder within `raw/` should contain their respective .mff files
 
 1. Set paths and options in `scripts/preprocessing/preprocessing.m`
 
-. Define paths for:
-	. Raw data
-	. EEGLAB and other required toolboxes
+* Define paths for:
+	- Raw data
+	- EEGLAB and other required toolboxes
 	
-. Specify whether `robust detrending` and `high-pass filtering` should be applied.
+* Specify whether `robust detrending` and `high-pass filtering` should be applied.
 
 3. Run the preporcessing.m 
 
