@@ -4,9 +4,9 @@
 
 This repository provides scripts and instructions for **preprocessing** and **epoching** ElectroEncephaloGraphy (EEG) data. The preprocessing pipeline is adapted from the brainX EEGLAB principles, with modifications to accommodate a specific experimental paradigm.
 
+### 📂 Folder Structure
 
-
-### Preprocessing
+Before running the scripts, organize your data as follows: 
  
 
 ```
@@ -27,23 +27,19 @@ project_root/
 
 ```
 
-Each participant folder within raw/ should contain their respective .mff files.
+Each participant folder within `raw/` should contain their respective .mff files.
 
+### ⚙️ Preprocessing
  
-```
-cd sub1_20221124
-```
+#### Steps
 
-Each participant folder contains *.mff files
+1. Set paths and options in `scripts/preprocessing/preprocessing.m`
 
-```
-sub1_20221124 
-├── sub1_20221124_091749.mff 
-├── sub2_20221124_094641.mff 
-├── sub3_20221124_100558.mff 
-```
-
-2. Set the paths for the raw data and toolboxes at the top of the preprocessing.m file in the scripts/preprocessing/preprocessing.m . Also set in this file whether robust detrending and highpass filtering is needed.  
+. Define paths for:
+	. Raw data
+	. EEGLAB and other required toolboxes
+	
+. Specify whether `robust detrending` and `high-pass filtering` should be applied.
 
 3. Run the preporcessing.m 
 
