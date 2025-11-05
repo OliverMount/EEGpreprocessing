@@ -28,6 +28,10 @@ sub1_20221124
 ├── sub1_20221124_091749.mff 
 ├── sub2_20221124_094641.mff 
 ├── sub3_20221124_100558.mff 
+```
 
+2. Set the paths for the raw data and toolboxes at the top of the preprocessing.m file. Also set in this file whether robust detrending and highpass filtering is needed.  
 
-2. 
+3. Run the preporcessing.m 
+
+4. It would generate the folder called `preprocess` that contains the final and intermediate preprocessed files.
