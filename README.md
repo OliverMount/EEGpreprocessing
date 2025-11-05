@@ -49,7 +49,11 @@ run('scripts/preprocessing/preprocessing.m')
 
 ```
 
-4. It would generate the folder called `preprocess` that contains the final and intermediate preprocessed files.
+4. After successful preprocessing, a new folder named `preprocess/` will be created containing:
+
+* Intermediate preprocessing results
+
+* Final preprocessed EEG datasets
 
 ---
 
