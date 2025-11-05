@@ -41,7 +41,13 @@ Each participant folder within `raw/` should contain their respective .mff files
 	
 * Specify whether `robust detrending` and `high-pass filtering` should be applied.
 
-3. Run the preporcessing.m 
+2. Run preprocessing:
+
+```{matlab}
+
+run('scripts/preprocessing/preprocessing.m')
+
+```
 
 4. It would generate the folder called `preprocess` that contains the final and intermediate preprocessed files.
 
